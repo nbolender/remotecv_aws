@@ -17,4 +17,4 @@ def load_sync(path):
     path_prefix = os.environ.get('PATH_PREFIX', '')
     bucket_loader = Bucket(bucket, region)
 
-    return bucket_loader.get(PATH_PREFIX + path)
+    return bucket_loader.get(path_prefix + path)
